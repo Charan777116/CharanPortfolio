@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">Charan<span>.</span></h2>
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+<header id="home">
+  <div class="header-container">
+    <div class="header-left">
+      <img src="https://i.ibb.co/ZzMVpZ5C/Chat-GPT-Image-Nov-7-2025-06-58-35-PM.png" 
+           alt="Charan Profile Photo" 
+           class="profile-img" />
+    </div>
+
+    <div class="header-right">
+      <h1>Hi,<br> I'm <span>Naga Ram Charan</span></h1>
+      <p>Web Developer | Java Programmer | DevOps Enthusiast</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </div>
+</header>
+
+
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate and curious developer with a strong foundation in web development, programming, and automation.
+      I enjoy learning new technologies, building creative projects, and solving real-world problems using code.
+      Currently, I'm focusing on Java development, DevOps tools, and cloud technologies.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" />
+        <p>HTML</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" />
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Bootstrap" />
+        <p>Bootstrap</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" />
+        <p>Java</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MySQL" />
+        <p>MySQL</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" />
+        <p>Python</p>
+      </div>
+
+      <!-- Jenkins: CDN SVG (quick) OR replace with images/jenkins.png if you prefer local -->
+      <div class="skill">
+        <!-- Option A: CDN SVG (works immediately) -->
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" />
+        <p>Jenkins</p>
+      </div>
+
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
+        <p>GitHub</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <!-- Smart Dustbin Project -->
+      <div class="project-card">
+        <img src="https://cdn.pixabay.com/photo/2018/03/23/04/29/technology-3254613_1280.jpg" alt="Smart Dustbin Project">
+        <div class="project-info">
+          <h3>🗑️ Smart Dustbin using Arduino Uno</h3>
+          <p>
+            Developed an IoT-based Smart Dustbin using Arduino Uno and ultrasonic sensors to automate lid opening
+            and monitor waste levels. The system improves hygiene and alerts when the bin is full, reducing manual checks.
+          </p>
+          <ul>
+            <li><b>Technologies:</b> Arduino Uno, Ultrasonic Sensor, Servo Motor</li>
+            <li><b>Concepts:</b> IoT, Automation, Embedded Systems</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Inventory Management System Project -->
+      <div class="project-card">
+        <img src="https://cdn.pixabay.com/photo/2018/01/08/18/24/warehouse-3065206_1280.jpg" alt="Inventory Management System">
+        <div class="project-info">
+          <h3>📦 Inventory Management System (Java Swing + MySQL)</h3>
+          <p>
+            Built a desktop-based Inventory Management System using Java Swing and MySQL to efficiently track, update,
+            and manage product stock. The application supports adding, editing, and deleting items through a simple GUI.
+          </p>
+          <ul>
+            <li><b>Technologies:</b> Java Swing, JDBC, MySQL</li>
+            <li><b>Concepts:</b> CRUD Operations, GUI Design, Database Connectivity</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="container">
+  <h2>Contact Me</h2>
+  <form id="contactForm" class="contact-form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const formData = {
+    name: document.getElementById("name").value,
+    phone: document.getElementById("phone").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value
+  };
+
+  const response = await fetch("http://localhost:5000/send-email", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData)
+  });
+
+  const result = await response.json();
+  alert(result.message);
+});
+</script>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Charan | Built with ❤️ using HTML & CSS</p>
+  </footer>
+
+  <!-- Smooth Scroll + Mobile Menu -->
+  <script>
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Hamburger Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('toggle');
+    });
+  </script>
+
+
+  
+</body>
+</html>
